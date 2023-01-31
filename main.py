@@ -1,16 +1,19 @@
-# This is a sample Python script.
+i = 0;
+while (True):
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    student = input("ФИО студента: ")
+    age = int(input("Возраст: "))
+    gender = input("Укажите гендер: ")
 
+    speciality = input("Назовите Специальность!");
+    if speciality == "Computer Science":
+        print(student)
+        print(age)
+        print(gender)
+        break
+    elif speciality != "":
+        print("Такой специальности не существует! Повторите попытку еще раз")
+    else:
+        print("404 студент не найден!")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    i += 1
